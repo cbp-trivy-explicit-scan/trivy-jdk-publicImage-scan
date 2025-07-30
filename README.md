@@ -1,0 +1,1 @@
+# trivy-jdk-publicImage-scan
