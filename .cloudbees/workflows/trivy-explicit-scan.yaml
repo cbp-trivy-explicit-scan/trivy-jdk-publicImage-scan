@@ -3,9 +3,9 @@ kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 30 13 * * *
+  push:
+    branches:
+      - test-2
 permissions:
   scm-token-own: read
   scm-token-org: read
