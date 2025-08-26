@@ -3,10 +3,10 @@ kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 30 3 * * 1
-    - cron: 30 3 * * 4
+  push:
+    branches:
+      - test-1
+
 permissions:
   scm-token-own: read
   scm-token-org: read
